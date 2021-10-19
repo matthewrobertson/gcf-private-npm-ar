@@ -1,0 +1,16 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gcloud functions deploy testPrivateAR --runtime nodejs14 --region us-east1 --trigger-http --project=matts-clean-test-project",
+    "preinstall": "npx google-artifactregistry-auth@3.0.0"
+  },
+  "dependencies": {
+    "@mattsnpmrepo/hello-world": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
